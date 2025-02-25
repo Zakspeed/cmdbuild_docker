@@ -8,7 +8,8 @@ services:
         image: postgis/postgis:12-3.3-alpine
         container_name: openmaint_db
         volumes:
-            - openmaint-db:/var/lib/postgresql
+            #- openmaint-db:/var/lib/postgresql
+            - openmaint-db:/var/lib/postgresql/data
         environment:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
